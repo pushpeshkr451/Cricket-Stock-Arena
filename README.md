@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+# Cricket Stock Arena 🏏💹
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to **Cricket Stock Arena**, a dynamic web application that gamifies the stock market concept within a simulated cricket match. Users can sign up, receive starting coins, and then buy or sell stocks of two competing cricket teams. The stock prices fluctuate in real-time based on in-game events like boundaries and wickets. The goal is to maximize your assets by the end of the match!
 
-## Available Scripts
+This project is built entirely in **React** and uses local state management, making it a self-contained, single-file application ideal for understanding core React concepts.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## ✨ Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **User Authentication:** Simple and secure signup and login system (in-memory).
+- **Game Lobby:** A central hub to select games (with other games marked as "Coming Soon").
+- **Dynamic Stock Simulation:** Team stock prices change based on random match events (Fours, Sixes, Wickets).
+- **Real-time Trading:** Buy and sell team stocks at any point during the match.
+- **Live Data Visualization:** A responsive line chart from Recharts displays the stock price history.
+- **Portfolio Management:** Keep track of your available coins and total asset value in real-time.
+- **Event Log:** A running commentary of match events as they happen.
+- **Responsive Design:** A clean, modern UI that works on various screen sizes.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🎮 How to Play
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. **Sign Up:** Create a new account to receive an initial balance of 1000 coins.
+2. **Enter the Game:** From the lobby, select the "Cricket Stock" game to start.
+3. **Analyze:** The match consists of 40 balls (two 20-ball innings). Both teams' stocks start at a price of $50.
+4. **Trade:**
+   - When the batting team hits a Four or a Six, their stock price increases, and the bowling team's price decreases.
+   - When a Wicket falls, the bowling team's stock price increases, and the batting team's price decreases.
+5. **Strategize:** Use the event log and price chart to make informed decisions. Buy low, sell high!
+6. **Win:** The match ends after 40 balls. Your final asset value determines your success.
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🛠️ Tech Stack
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Frontend:** React.js  
+- **Charting:** Recharts  
+- **Icons:** Lucide React  
+- **State Management:** React Hooks (`useState`, `useEffect`, `useMemo`, `useRef`)  
+- **Styling:** Plain CSS with class names inspired by Tailwind CSS (but not using the framework).  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
