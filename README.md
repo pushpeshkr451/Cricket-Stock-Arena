@@ -3,7 +3,7 @@
 Welcome to **Cricket Stock Arena**, a dynamic web application that gamifies the stock market concept within a simulated cricket match. Users can sign up, receive starting coins, and then buy or sell stocks of two competing cricket teams. The stock prices fluctuate in real-time based on in-game events like boundaries and wickets. The goal is to maximize your assets by the end of the match!
 
 This project is built entirely in **React** and uses local state management, making it a self-contained, single-file application ideal for understanding core React concepts.
-
+ 
 ---
 
 ## ✨ Features
